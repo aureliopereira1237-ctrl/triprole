@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Triprole</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="app">
+
+  <section id="descobrir" class="tela ativa">
+    <h1>Triprole</h1>
+    <p class="slogan">Conheça pessoas novas no seu rolê.</p>
+
+    <div class="card">
+      <img id="fotoPessoa" src="" alt="Perfil">
+      <h2 id="nome"></h2>
+      <p id="cidade"></p>
+      <p id="bio"></p>
+
+      <div class="tags" id="tags"></div>
+
+      <div class="botoes">
+        <button onclick="passar()">✕</button>
+        <button onclick="curtir()">❤️</button>
+      </div>
+
+      <p id="mensagem"></p>
+    </div>
+  </section>
+
+  <section id="tours" class="tela">
+    <h2>📍 Rolês perto de você</h2>
+    <p class="slogan">Use sua localização para ver ideias de rolês.</p>
+
+    <button class="botao-principal" onclick="buscarLocalizacao()">
+      Ativar localização
+    </button>
+
+    <div id="listaTours"></div>
+  </section>
+
+  <section id="chat" class="tela">
+    <h2>💬 Chat</h2>
+
+    <div class="chat-box">
+      <p><strong>Ana Clara:</strong> Bora num café hoje?</p>
+      <p><strong>Você:</strong> Bora! Qual região?</p>
+      <p><strong>Ana Clara:</strong> Vila Madalena fica bom?</p>
+    </div>
+
+    <input type="text" placeholder="Digite uma mensagem...">
+  </section>
+
+  <section id="perfil" class="tela">
+    <h2>👤 Meu Perfil</h2>
+
+    <img id="preview" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=80">
+
+    <input type="file" id="foto" accept="image/*">
+    <input type="text" id="meuNome" placeholder="Seu nome">
+    <input type="number" id="minhaIdade" placeholder="Sua idade">
+
+    <select id="signo">
+      <option>Escolha seu signo</option>
+      <option>Áries</option>
+      <option>Touro</option>
+      <option>Gêmeos</option>
+      <option>Câncer</option>
+      <option>Leão</option>
+      <option>Virgem</option>
+      <option>Libra</option>
+      <option>Escorpião</option>
+      <option>Sagitário</option>
+      <option>Capricórnio</option>
+      <option>Aquário</option>
+      <option>Peixes</option>
+    </select>
+
+    <textarea id="minhaBio" placeholder="Escreva sua bio"></textarea>
+
+    <button class="botao-principal" onclick="salvarPerfil()">Salvar Perfil</button>
+
+    <div class="perfil-card">
+      <h3 id="perfilNome">Seu nome</h3>
+      <p id="perfilSigno">Seu signo</p>
+      <p id="perfilBio">Sua bio aparecerá aqui</p>
+    </div>
+  </section>
+
+  <nav class="menu-bottom">
+    <button onclick="mostrarTela('descobrir')">🔥<small>Descobrir</small></button>
+    <button onclick="mostrarTela('tours')">📍<small>Rolês</small></button>
+    <button onclick="mostrarTela('chat')">💬<small>Chat</small></button>
+    <button onclick="mostrarTela('perfil')">👤<small>Perfil</small></button>
+  </nav>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
