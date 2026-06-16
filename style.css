@@ -1,0 +1,252 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  min-height:100vh;
+  color:white;
+  padding:24px 14px 110px;
+  overflow-x:hidden;
+  background:
+    radial-gradient(circle at top,#3b1400 0%,transparent 32%),
+    radial-gradient(circle at bottom right,#211000 0%,transparent 28%),
+    #080808;
+}
+
+.app{
+  max-width:500px;
+  margin:auto;
+}
+
+.page{
+  display:none;
+}
+
+.page.active{
+  display:block;
+}
+
+.hero{
+  margin-bottom:28px;
+}
+
+.badge{
+  display:inline-flex;
+  padding:10px 18px;
+  border-radius:30px;
+  background:rgba(255,122,0,.15);
+  color:#ff9d00;
+  font-weight:800;
+  margin-bottom:18px;
+}
+
+.hero h1{
+  font-size:56px;
+  line-height:1;
+  margin-bottom:14px;
+  background:linear-gradient(90deg,#ffd08a,#ff8a00,#ff3c00);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.hero p,
+.sub,
+.status{
+  color:#cfcfcf;
+  font-size:16px;
+}
+
+h1{
+  font-size:46px;
+  margin-bottom:10px;
+  background:linear-gradient(90deg,#ffd08a,#ff8a00,#ff3c00);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+h2{
+  margin:30px 0 15px;
+}
+
+.location-btn,
+.composer button,
+.profile button{
+  width:100%;
+  border:none;
+  border-radius:22px;
+  padding:16px;
+  background:linear-gradient(90deg,#ff8a00,#ff3c00);
+  color:white;
+  font-weight:bold;
+  cursor:pointer;
+  margin-bottom:14px;
+  box-shadow:0 12px 35px rgba(255,90,20,.25);
+}
+
+.search,
+input,
+textarea{
+  width:100%;
+  border:none;
+  border-radius:22px;
+  padding:16px;
+  background:#1b1b1b;
+  color:white;
+  outline:none;
+  margin:10px 0;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+}
+
+.cat{
+  min-height:125px;
+  border-radius:30px;
+  padding:24px;
+  background:
+    linear-gradient(135deg,rgba(255,122,0,.15),rgba(255,60,0,.03)),
+    #171717;
+  border:1px solid rgba(255,120,40,.25);
+  color:white;
+  text-align:left;
+  font-size:34px;
+  cursor:pointer;
+  box-shadow:0 14px 40px rgba(255,90,20,.08);
+}
+
+.cat span{
+  display:block;
+  font-size:15px;
+  margin-top:16px;
+}
+
+.moods{
+  display:flex;
+  gap:10px;
+  overflow-x:auto;
+  padding-bottom:10px;
+}
+
+.moods button{
+  white-space:nowrap;
+  border:none;
+  border-radius:20px;
+  padding:14px 16px;
+  background:#1c1c1c;
+  color:white;
+  cursor:pointer;
+}
+
+.place,
+.post,
+.profile,
+.composer{
+  background:
+    linear-gradient(135deg,rgba(255,122,0,.10),rgba(255,60,0,.02)),
+    #151515;
+  border:1px solid rgba(255,120,40,.22);
+  border-radius:30px;
+  padding:18px;
+  margin-bottom:16px;
+  box-shadow:0 14px 45px rgba(255,90,20,.08);
+}
+
+.place img{
+  width:100%;
+  height:190px;
+  object-fit:cover;
+  border-radius:24px;
+  margin-bottom:14px;
+}
+
+.place small,
+.post small{
+  color:#ffb347;
+}
+
+.place p,
+.post p,
+.preview p{
+  color:#cfcfcf;
+  margin-top:8px;
+}
+
+.composer textarea{
+  height:115px;
+  resize:none;
+}
+
+.post-actions{
+  display:flex;
+  gap:18px;
+  margin-top:14px;
+  color:#bbb;
+}
+
+.avatar{
+  width:120px;
+  height:120px;
+  border-radius:32px;
+  background:linear-gradient(135deg,#ff8a00,#ff3c00);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:50px;
+  margin:0 auto 15px;
+}
+
+#fotoPerfil{
+  width:170px;
+  height:170px;
+  object-fit:cover;
+  border-radius:34px;
+  border:3px solid #ff7a00;
+  display:none;
+  margin:0 auto 15px;
+}
+
+.preview{
+  background:#202020;
+  border-radius:24px;
+  padding:16px;
+  margin-top:15px;
+}
+
+.menu{
+  position:fixed;
+  bottom:16px;
+  left:50%;
+  transform:translateX(-50%);
+  width:92%;
+  max-width:500px;
+  background:rgba(18,18,18,.97);
+  border:1px solid rgba(255,120,40,.3);
+  border-radius:28px;
+  display:flex;
+  justify-content:space-around;
+  padding:12px;
+  box-shadow:0 20px 60px rgba(0,0,0,.7);
+}
+
+.menu button{
+  background:none;
+  border:none;
+  color:white;
+  font-size:24px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:4px;
+  cursor:pointer;
+}
+
+.menu span{
+  font-size:11px;
+  color:#bbb;
+}
