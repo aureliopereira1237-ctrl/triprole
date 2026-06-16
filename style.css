@@ -1,0 +1,282 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  min-height:100vh;
+  color:white;
+  padding:24px 14px 120px;
+  background:
+    radial-gradient(circle at top,#3b1400 0%,transparent 34%),
+    radial-gradient(circle at bottom right,#220014 0%,transparent 30%),
+    #080808;
+}
+
+.app{
+  max-width:540px;
+  margin:auto;
+}
+
+.page{
+  display:none;
+}
+
+.page.active{
+  display:block;
+}
+
+.badge{
+  display:inline-flex;
+  padding:10px 18px;
+  border-radius:30px;
+  background:rgba(255,122,0,.15);
+  color:#ff9d00;
+  font-weight:800;
+  margin-bottom:18px;
+}
+
+.hero{
+  margin-bottom:28px;
+}
+
+.hero h1,
+h1{
+  font-size:48px;
+  line-height:1;
+  margin-bottom:14px;
+  background:linear-gradient(90deg,#ffd08a,#ff8a00,#ff3c00);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.hero p,
+.sub,
+.status{
+  color:#cfcfcf;
+}
+
+h2{
+  margin:30px 0 15px;
+}
+
+.main-btn,
+.composer button,
+.profile button,
+.volun button{
+  width:100%;
+  border:none;
+  border-radius:22px;
+  padding:16px;
+  background:linear-gradient(90deg,#ff8a00,#ff3c00);
+  color:white;
+  font-weight:bold;
+  cursor:pointer;
+  margin-bottom:14px;
+  box-shadow:0 12px 35px rgba(255,90,20,.25);
+}
+
+.search,
+input,
+textarea{
+  width:100%;
+  border:none;
+  border-radius:22px;
+  padding:16px;
+  background:#1b1b1b;
+  color:white;
+  outline:none;
+  margin:10px 0;
+}
+
+.quick-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+  margin-top:18px;
+}
+
+.quick-grid button,
+.cat{
+  min-height:115px;
+  border-radius:30px;
+  padding:24px;
+  background:
+    linear-gradient(135deg,rgba(255,122,0,.15),rgba(255,60,0,.03)),
+    #171717;
+  border:1px solid rgba(255,120,40,.25);
+  color:white;
+  text-align:left;
+  font-size:32px;
+  cursor:pointer;
+  box-shadow:0 14px 40px rgba(255,90,20,.08);
+}
+
+.quick-grid span,
+.cat span{
+  display:block;
+  font-size:15px;
+  margin-top:14px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+}
+
+.place,
+.post,
+.profile,
+.composer,
+.benefit,
+.volun,
+.plan{
+  background:
+    linear-gradient(135deg,rgba(255,122,0,.10),rgba(255,60,0,.02)),
+    #151515;
+  border:1px solid rgba(255,120,40,.25);
+  border-radius:30px;
+  padding:18px;
+  margin-bottom:16px;
+  box-shadow:0 14px 45px rgba(255,90,20,.08);
+}
+
+.place img{
+  width:100%;
+  height:190px;
+  object-fit:cover;
+  border-radius:24px;
+  margin-bottom:14px;
+}
+
+.place small,
+.post small,
+.benefit span{
+  color:#ffb347;
+}
+
+.place p,
+.post p,
+.preview p,
+.benefit p,
+.volun p,
+.plan p{
+  color:#cfcfcf;
+  margin-top:8px;
+}
+
+.benefit h3,
+.volun h3,
+.plan h3{
+  color:#fff;
+  margin-bottom:8px;
+}
+
+.volun button{
+  margin-top:14px;
+}
+
+.plan{
+  display:flex;
+  gap:18px;
+  align-items:center;
+}
+
+.plan.destaque{
+  border:2px solid #ff7a00;
+  box-shadow:0 0 35px rgba(255,122,0,.25);
+}
+
+.plan-icon{
+  min-width:70px;
+  height:70px;
+  border-radius:22px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:34px;
+  background:rgba(255,122,0,.15);
+}
+
+.plan strong{
+  display:block;
+  margin-top:10px;
+  color:#ffb347;
+}
+
+.composer textarea{
+  height:115px;
+  resize:none;
+}
+
+.post-actions{
+  display:flex;
+  gap:18px;
+  margin-top:14px;
+  color:#bbb;
+}
+
+.avatar{
+  width:120px;
+  height:120px;
+  border-radius:32px;
+  background:linear-gradient(135deg,#ff8a00,#ff3c00);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:50px;
+  margin:0 auto 15px;
+}
+
+#fotoPerfil{
+  width:170px;
+  height:170px;
+  object-fit:cover;
+  border-radius:34px;
+  border:3px solid #ff7a00;
+  display:none;
+  margin:0 auto 15px;
+}
+
+.preview{
+  background:#202020;
+  border-radius:24px;
+  padding:16px;
+  margin-top:15px;
+}
+
+.menu{
+  position:fixed;
+  bottom:14px;
+  left:50%;
+  transform:translateX(-50%);
+  width:96%;
+  max-width:560px;
+  background:rgba(18,18,18,.98);
+  border:1px solid rgba(255,120,40,.3);
+  border-radius:28px;
+  display:flex;
+  justify-content:space-around;
+  padding:10px;
+  box-shadow:0 20px 60px rgba(0,0,0,.7);
+}
+
+.menu button{
+  background:none;
+  border:none;
+  color:white;
+  font-size:21px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:4px;
+  cursor:pointer;
+}
+
+.menu span{
+  font-size:10px;
+  color:#bbb;
+}
